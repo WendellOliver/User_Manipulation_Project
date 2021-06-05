@@ -5,23 +5,37 @@ body, html
     height: 100%;   
 }
 
-body{
+
+body {
     display: flex;
-    min-height: 100%;
-}
-header{
-    background-color: aquamarine;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
 }
 
-#wrapper{
-    position: relative;
-    min-height:100%;
-    width: 100%;
+header{
+    background-color: aquamarine;
+    height: 50px;
 }
+
 
 div.container{
     padding-bottom: 100px;
-    min-height: 100%;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 14px;
+    list-style: none;
+}
+
+li {
+    background: rgb(123, 142, 218);
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
 }
 
 footer{
@@ -32,4 +46,3 @@ footer{
     margin-top: auto;
  
 }
-
