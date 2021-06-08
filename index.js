@@ -22,6 +22,7 @@ async function authors() {
         });
 
         localStorage.setItem("authors", JSON.stringify(authors) );
+        
 
     } catch (error) { // caso a API retorne erro, capturamos com o catch
         console.log(error);
